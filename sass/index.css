@@ -1,0 +1,36 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .hamburger {
+  font-size: 2.8rem;
+}
+nav .options {
+  display: none;
+}
+@media (min-width: 768px) {
+  nav .options {
+    display: block;
+  }
+  nav .hamburger {
+    display: none;
+  }
+}/*# sourceMappingURL=index.css.map */

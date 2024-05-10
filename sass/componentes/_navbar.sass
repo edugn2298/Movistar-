@@ -1,0 +1,12 @@
+nav
+  @include displays(flex,space-between,center,row)
+
+  .hamburger
+    font-size: 2.8rem
+  .options
+    display: none
+  @include tablet
+    .options
+      display: block
+    .hamburger
+      display: none
