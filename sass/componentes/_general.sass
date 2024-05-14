@@ -10,6 +10,8 @@ html
 body
   font-family: $fuente-principal
   font-size: 1.6rem
+  background-color: $principalDark
+  color: $principalLight
 
 @mixin displays($display: flex, $justify: center, $align: center, $direction: row ,$column_numbers: 1fr)
   @if $display == flex
@@ -38,3 +40,5 @@ body
 @mixin desktopXL 
   @media (min-width: $desktopXL)
     @content
+
+

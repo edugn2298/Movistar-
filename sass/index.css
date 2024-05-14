@@ -12,6 +12,8 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
+  background-color: #181818;
+  color: #f4f4f4;
 }
 
 nav {
@@ -20,17 +22,120 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-nav .hamburger {
-  font-size: 2.8rem;
-}
-nav .options {
-  display: none;
-}
 @media (min-width: 768px) {
   nav .options {
     display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+    margin: 0.8rem;
+    padding: 0.8rem;
+  }
+  nav .options li {
+    cursor: pointer;
   }
   nav .hamburger {
     display: none;
   }
+}
+
+.abajo {
+  background-color: #181818;
+  position: sticky;
+  top: 0;
+}
+
+.nav-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger {
+  font-size: 2.8rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  color: #f4f4f4;
+  cursor: pointer;
+}
+
+.options {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  color: #f4f4f4;
+  cursor: pointer;
+}
+
+@keyframes flip-vertical-bck {
+  0% {
+    transform: translateZ(0) rotateY(0);
+  }
+  100% {
+    transform: translateZ(-360px) rotateY(-360deg);
+  }
+}
+.flip-vertical-bck {
+  animation: flip-vertical-bck 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+.hero {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("/source/img1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+main h1, main p {
+  padding: 2rem;
+  margin: 1rem;
+  text-align: center;
+}
+main h1 {
+  font-size: 5rem;
+}
+main p {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+main a {
+  padding: 1rem 2rem;
+  background-color: #5bc500;
+  color: #f4f4f4;
+  font-size: 2.3rem;
+  font-weight: 800;
+  border-radius: 1rem;
+}
+main a:hover {
+  background-color: #019bf4;
+}
+
+section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
 }/*# sourceMappingURL=index.css.map */

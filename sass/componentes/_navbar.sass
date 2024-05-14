@@ -1,12 +1,53 @@
 nav
   @include displays(flex,space-between,center,row)
-
-  .hamburger
-    font-size: 2.8rem
-  .options
-    display: none
   @include tablet
     .options
       display: block
+      @include displays(flex,space-between,center,row)
+      list-style: none
+      gap: 1rem
+      margin: 0.8rem
+      padding: 0.8rem
+      li
+        cursor: pointer
     .hamburger
       display: none
+
+.abajo
+  background-color: $principalDark
+  position: sticky
+  top: 0
+
+.nav-center
+  @include displays()
+  cursor: pointer
+
+.nav-right
+  @include displays(flex,space-between,center,row)
+
+.hamburger
+  font-size: 2.8rem
+  padding: 0.5rem
+  margin: 0.5rem
+  color: $principalLight
+  cursor: pointer
+
+.options
+  display: none
+
+a
+  text-decoration: none
+  padding: 0.5rem
+  margin: 0.5rem
+  color: $principalLight
+  cursor: pointer
+
+
+@keyframes flip-vertical-bck
+  0% 
+    transform: translateZ(0) rotateY(0)
+  100% 
+    transform: translateZ(-360px) rotateY(-360deg)
+
+.flip-vertical-bck 
+  animation: flip-vertical-bck 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both
