@@ -41,4 +41,16 @@ body
   @media (min-width: $desktopXL)
     @content
 
+@mixin boton-estilo ($principal,$secundario ,$color: #f4f4f4)
+  margin: 0.8rem
+  padding: 1rem 2rem
+  font-size: 1em
+  color: $color
+  background-color: $principal
+  border-radius: 1rem
+  cursor: pointer
+  transition: background-color 0.5s 
+  &:hover 
+    background-color: $secundario
+
 

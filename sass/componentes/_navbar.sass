@@ -7,17 +7,7 @@ nav
       list-style: none
       gap: 1rem
       li
-        cursor: pointer
-        margin: 0.8rem
-        padding: 0.8rem
-        color: $principalLight
-        padding: 1rem 2rem
-        background-color: $movistarColor
-        color: $principalLight
-        border-radius: 1rem
-      li:hover
-        option:hover 
-        background-color: $movistarColor
+        @include boton-estilo($movistarColor, $movistarColorSecundary)
     .hamburger
       display: none
 
@@ -45,17 +35,7 @@ nav
 
 a
   text-decoration: none
-  padding: 0.5rem
-  margin: 0.5rem
-  color: $principalLight
-  cursor: pointer
-  padding: 1rem 2rem
-  background-color: $movistarColorSecundary
-  color: $principalLight
-  border-radius: 1rem
-  a:hover 
-    background-color: $movistarColor
-
+  @include boton-estilo($movistarColorSecundary, $movistarColor)
 
 @keyframes flip-vertical-bck
   0% 
