@@ -22,6 +22,9 @@ nav
 
 .nav-right
   @include displays(flex,space-between,center,row)
+  > a
+    text-decoration: none
+    @include boton-estilo($movistarColorSecundary, $movistarColor)
 
 .hamburger
   font-size: 2.8rem
@@ -33,9 +36,7 @@ nav
 .options
   display: none
 
-a
-  text-decoration: none
-  @include boton-estilo($movistarColorSecundary, $movistarColor)
+
 
 @keyframes flip-vertical-bck
   0% 
